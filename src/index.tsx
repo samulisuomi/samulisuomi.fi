@@ -11,10 +11,10 @@ export default App
 // Render your app
 if (typeof document !== 'undefined') {
   const renderMethod = module.hot ? ReactDOM.render : ReactDOM.hydrate || ReactDOM.render
-  const render = (Comp: React.ComponentType) => {
+  const render = (Component: React.ComponentType) => {
     renderMethod(
       <AppContainer>
-        <Comp />
+        <Component />
       </AppContainer>,
       document.getElementById('root'),
     )
