@@ -1,5 +1,5 @@
-export interface Post {
-  body: string
-  id: number
+export interface PortfolioItem {
   title: string
+  year: string
+  description: string
 }
