@@ -1,6 +1,6 @@
 {
-  "name": "react-static-typescript-enabled",
-  "version": "1.0.0",
+  "name": "samulisuomi.fi",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "UNLICENSED",
   "private": true,
@@ -15,7 +15,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^5.1.8"
+    "react-static": "sasuomi/react-static"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
