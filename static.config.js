@@ -1,5 +1,6 @@
 import axios from 'axios'
 import path from 'path'
+import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 // Paths Aliases defined through tsconfig.json
 const typescriptWebpackPaths = require('./webpack.config.js')
