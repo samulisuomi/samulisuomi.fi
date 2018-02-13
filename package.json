@@ -2,7 +2,8 @@
   "name": "react-static-typescript-enabled",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
