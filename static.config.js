@@ -24,7 +24,7 @@ export default {
       },
     ]
   },
-  webpack: (config, { defaultLoaders }) => {
+  webpack: (config, { defaultLoaders, stage }) => {
     // Add .ts and .tsx extension to resolver
     config.resolve.extensions.push('.ts', '.tsx')
 
@@ -51,6 +51,28 @@ export default {
                 },
               },
             ],
+          },
+          {
+            test: /\.s(a|c)ss$/,
+            use:
+              stage === 'dev'
+                ? [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
+                : ExtractTextPlugin.extract({
+                  use: [
+                    {
+                      loader: 'css-loader',
+                      options: {
+                        importLoaders: 1,
+                        minimize: true,
+                        sourceMap: false,
+                      },
+                    },
+                    {
+                      loader: 'sass-loader',
+                      options: { includePaths: ['src/'] },
+                    },
+                  ],
+                }),
           },
           defaultLoaders.cssLoader,
           defaultLoaders.fileLoader,
