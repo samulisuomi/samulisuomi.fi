@@ -4,9 +4,12 @@ import Routes from 'react-static-routes'
 
 import './App.scss'
 
+import BaseHead from './BaseHead'
+
 export default () => (
   <Router>
     <div>
+      <BaseHead />
       <div className="content">
         <Routes />
       </div>
