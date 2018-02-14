@@ -15,7 +15,8 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router": "^4.2.0",
-    "react-static": "^5.1.8"
+    "react-static": "^5.1.8",
+    "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",

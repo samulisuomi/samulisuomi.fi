@@ -8,13 +8,8 @@ export default () => (
     <meta name="description" content={ ME }  />
     <meta name="author" content={ ME } />
 
-    { /* Mobile-specific Metas */}
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    { /* Font */ }
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
 
-    { /* Google Analytics */ }
     <script>
       {
       `(function(i, s, o, g, r, a, m) {

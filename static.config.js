@@ -1,4 +1,3 @@
-import axios from 'axios'
 import path from 'path'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
@@ -8,12 +7,9 @@ const typescriptWebpackPaths = require('./webpack.config.js')
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
   getSiteData: () => ({
-    title: 'Samuli Suomi',
+    title: 'Samuli Suomi'
   }),
   getRoutes: async () => {
-    const { data: posts } = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts',
-    )
     return [
       {
         path: '/',
