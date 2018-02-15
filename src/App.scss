@@ -6,6 +6,11 @@ body {
   font-family: "Varela Round", sans-serif;
 }
 
+h2, h3 {
+  letter-spacing: 0.1625em;
+  text-transform: uppercase;
+}
+
 // TODO: No separate classes for these, use e.g. mixin for media query:
 
 @media (max-width: 550px) {
