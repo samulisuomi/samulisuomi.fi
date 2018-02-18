@@ -6,6 +6,8 @@ import './App.scss'
 
 import BaseHead from './BaseHead'
 
+export const ANIMATED_LINK_CLASS = 'animated-link'
+
 export default () => (
   <Router>
     <div>

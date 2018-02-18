@@ -7,9 +7,6 @@ export default () => (
   <Head>
     <meta name="description" content={ ME }  />
     <meta name="author" content={ ME } />
-
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" type="text/css" />
-
     <script>
       {
       `(function(i, s, o, g, r, a, m) {
