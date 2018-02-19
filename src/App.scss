@@ -9,9 +9,8 @@ body {
 }
 
 .app {
-  h2, h3 {
-    letter-spacing: 0.1625em;
-    text-transform: uppercase;
+  h3, h4, h5 {
+    font-family: 'Bitter', serif;
   }
   
   // TODO: No separate classes for these, use e.g. mixin for media queries:
