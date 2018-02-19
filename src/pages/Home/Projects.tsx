@@ -7,7 +7,7 @@ const ROOT_CLASS = 'pages-home-projects'
 export default () => (
   <div className={ROOT_CLASS}>
     <h4>
-      Fun Projects to Eyeball At
+      Projects to Lay Eyeballs On
     </h4>
     <p>
       Lorem
