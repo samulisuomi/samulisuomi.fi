@@ -1,3 +1,4 @@
+import React from 'react'
 import path from 'path'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
@@ -20,6 +21,24 @@ export default {
         component: 'src/pages/404',
       },
     ]
+  },
+  Document: ({ Html, Head, Body, children, siteData, renderMeta }) => {
+    return (
+      <Html>
+        <Head>
+          <meta charSet="utf-8" />
+          <meta name="description" content="Samuli Suomi" />
+          <meta name="author" content="Samuli Suomi" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        </Head>
+        <Body>
+          {children}
+          <style id="jss-server-side">{renderMeta.jssStyles}</style>
+        </Body>
+      </Html>
+    )
   },
   webpack: (config, { defaultLoaders, stage }) => {
     // Add .ts and .tsx extension to resolver

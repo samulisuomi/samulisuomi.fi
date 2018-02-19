@@ -4,17 +4,14 @@ import Routes from 'react-static-routes'
 
 import './App.scss'
 
-import BaseHead from './BaseHead'
-
+export const ROOT_CLASS = 'app'
 export const ANIMATED_LINK_CLASS = 'animated-link'
+export const TEXT_ALIGN_CENTER_SMALL = 'text-align-center-small'
 
 export default () => (
   <Router>
-    <div>
-      <BaseHead />
-      <div className="content">
-        <Routes />
-      </div>
+    <div className={ROOT_CLASS}>
+      <Routes />
     </div>
   </Router>
 )
