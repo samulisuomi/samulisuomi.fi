@@ -1,0 +1,14 @@
+$media-breakpoint-small: 550px;
+
+// <3 http://chir.ag/projects/name-that-color <3
+$colors: (
+  cinnabar: #e4572e,
+  rhino: #29335c,
+  buttercup: #f3a712,
+  olivine: #a8c686,
+  hippie-blue: #669bbc
+);
+
+$color-primary: map-get($colors, cinnabar);
+$color-primary-dark: darken($color-primary, 30%);
+$color-primary-light: lighten($color-primary, 30%);

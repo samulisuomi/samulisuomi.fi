@@ -2,7 +2,10 @@ import React from 'react'
 
 import './Header.scss'
 
-import { ANIMATED_LINK_CLASS } from '../../App'
+import {
+  ANIMATED_LINK_CLASS,
+  TEXT_ALIGN_CENTER_SMALL
+} from '../../App'
 
 const ROOT_CLASS = 'pages-home-header'
 const SOCIAL_LINKS_CLASS = `${ROOT_CLASS}-social-links`
@@ -32,9 +35,11 @@ const SOCIAL_LINKS: { title: string, url: string, faKey: string}[] = [
 ]
 
 export default () => (
-  <div className={`row ${ ROOT_CLASS }`}>
-    <div className="text-align-center-small">
+  <div className={ROOT_CLASS}>
+    <div className={`row ${ TEXT_ALIGN_CENTER_SMALL }`}>
       <h2>Samuli Suomi</h2>
+    </div>
+    <div className={`row ${ TEXT_ALIGN_CENTER_SMALL }`}>
       <p>
         Lorem foo bar.
       </p>
@@ -45,25 +50,19 @@ export default () => (
         Foorem lor bar lar.
       </p>
     </div>
-    <div className="row">
-      <div className={SOCIAL_LINKS_CLASS}>
-        { SOCIAL_LINKS.map(social => (
-          <div
-            className={SOCIAL_LINKS_LINK_CLASS}
+    <div className={SOCIAL_LINKS_CLASS}>
+      { SOCIAL_LINKS.map(social => (
+          <a
+            className={`${ SOCIAL_LINKS_LINK_CLASS } ${ ANIMATED_LINK_CLASS }`}
+            href={social.url}
+            title={social.title}
             key={social.title}
+            target="_blank"
           >
-            <a
-              className={ANIMATED_LINK_CLASS}
-              href={social.url}
-              title={social.title}
-              target="_blank"
-            >
-              <i className={`fa ${ social.faKey } icon-link`} />
-            </a>
-          </div>
-          )
-        ) }
-      </div>
+            <i className={`fa ${ social.faKey } icon-link`} />
+          </a>
+        )
+      ) }
     </div>
   </div>
 )

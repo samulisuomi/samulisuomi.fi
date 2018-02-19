@@ -1,20 +1,37 @@
-@import "~skeleton-css/css/normalize.css";
-@import "~skeleton-css/css/skeleton.css";
+@import '~skeleton-css/css/normalize.css';
+@import '~skeleton-css/css/skeleton.css';
+
+@import 'variables';
 
 body {
   background-color: #f9f9f9;
-  font-family: "Varela Round", sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
-h2, h3 {
-  letter-spacing: 0.1625em;
-  text-transform: uppercase;
-}
+.app {
+  h2, h3 {
+    letter-spacing: 0.1625em;
+    text-transform: uppercase;
+  }
+  
+  // TODO: No separate classes for these, use e.g. mixin for media queries:
+  @media (max-width: $media-breakpoint-small) {
+    .text-align-center-small {
+      text-align: center;
+    }
+  }
 
-// TODO: No separate classes for these, use e.g. mixin for media query:
+  .animated-link {
+    color: black;
+    transition: color 0.15s;
+    text-decoration: none;
 
-@media (max-width: 550px) {
-  .text-align-center-small {
-    text-align: center;
+    &:hover {
+      color: $color-primary;
+    }
+
+    &:active {
+      color: $color-primary-dark;
+    }
   }
 }
