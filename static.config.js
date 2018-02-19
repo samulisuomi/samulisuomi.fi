@@ -73,7 +73,12 @@ export default {
             test: /\.s(a|c)ss$/,
             use:
               stage === 'dev'
-                ? [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }]
+                ? [
+                  { loader: 'style-loader' },
+                  { loader: 'css-loader' },
+                  { loader: 'sass-loader' },
+                  { loader: 'postcss-loader' }
+                ]
                 : ExtractTextPlugin.extract({
                   use: [
                     {
@@ -88,6 +93,9 @@ export default {
                       loader: 'sass-loader',
                       options: { includePaths: ['src/'] },
                     },
+                    {
+                      loader: 'postcss-loader'
+                    }
                   ],
                 }),
           },
