@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Contact.scss'
 
-import { linkedIn } from '../../utilities/socialLinks'
+import { linkedIn } from '../../utilities/socialMediaItems'
 
 const ROOT_CLASS = 'pages-home-contact'
 

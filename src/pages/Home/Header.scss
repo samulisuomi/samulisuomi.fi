@@ -1,9 +1,12 @@
 @import '../../variables';
 
 .pages-home-header {
-  margin-top: 15%;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  text-align: center;
 
   h2 {
+    margin-top: 2rem;
     letter-spacing: 0.1625em;
     font-weight: bold;
     text-transform: uppercase;
@@ -19,22 +22,12 @@
 
   &-social-links {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     
     a {
       font-size: 3em;
-      margin-right: 1em;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
     }
   }
-
-  @media (max-width: $media-breakpoint-small) {
-    &-social-links {
-      justify-content: space-around;
-
-      a {
-        margin: 0;
-      }
-    }
-  }
-
 }

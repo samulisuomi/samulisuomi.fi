@@ -2,11 +2,6 @@ import React from 'react'
 
 import './Header.scss'
 
-import {
-  ANIMATED_LINK_CLASS,
-  TEXT_ALIGN_CENTER_SMALL
-} from '../../App'
-
 import SocialLinks from '../../partials/SocialLinks'
 
 const ROOT_CLASS = 'pages-home-header'
@@ -14,18 +9,18 @@ const SOCIAL_LINKS_CLASS = `${ROOT_CLASS}-social-links`
 
 export default () => (
   <div className={ROOT_CLASS}>
-    <div className={`row ${ TEXT_ALIGN_CENTER_SMALL }`}>
+    <div className="row">
       <h2>Samuli Suomi</h2>
     </div>
-    <div className={`row ${ TEXT_ALIGN_CENTER_SMALL }`}>
+    <div className="row">
       <p>
-        Lorem foo bar.
+        I've done web and other computery things.
       </p>
       <p>
-        Barem foo lor.
+        The owls are not what they seem.
       </p>
       <p>
-        Foorem lor bar lar.
+        The cake is a lie.
       </p>
     </div>
     <SocialLinks className={SOCIAL_LINKS_CLASS} />

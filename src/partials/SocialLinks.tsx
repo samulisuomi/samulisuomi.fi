@@ -3,7 +3,7 @@ import React from 'react'
 
 import SocialLink from './SocialLink'
 
-import { socialLinks } from '../utilities/socialLinks'
+import { socialMediaItems } from '../utilities/socialMediaItems'
 
 interface Props {
   className: string
@@ -11,7 +11,7 @@ interface Props {
 
 export default ({ className }: Props) => (
   <div className={className}>
-    { socialLinks.map(social => (
+    { socialMediaItems.map(social => (
         <SocialLink
           key={social.title}
           socialMediaItem={social}
