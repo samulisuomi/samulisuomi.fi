@@ -5,10 +5,14 @@
 
 body {
   background-color: #f9f9f9;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .app {
+  h1, h2, h3, h4, h5 {
+    font-family: 'Varela Round', sans-serif;
+  }
+
   // TODO: No separate classes for these, use e.g. mixin for media queries:
   @media (max-width: $media-breakpoint-small) {
     .text-align-center-small {
