@@ -9,7 +9,7 @@ const ROOT_CLASS = `pages-home-${PAGE_ID}`
 
 export default () => (
   <div className={ROOT_CLASS}>
-    <h4>
+    <h4 id={PAGE_ID}>
       Contact
     </h4>
     <p>
