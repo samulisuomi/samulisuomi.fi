@@ -59,7 +59,7 @@ export default {
           <link rel="manifest" href="/manifest.json" />
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
-          <meta name="theme-color" content="#2b404e" />
+          <meta name="theme-color" content="#1d2931" />
           <meta property="og:image" content="http://samulisuomi.fi/img/meta.jpg" />
           <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115942896-1" />
           <script dangerouslySetInnerHTML={googleAnalyticsScript} />
