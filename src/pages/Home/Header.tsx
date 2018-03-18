@@ -17,7 +17,7 @@ export default () => (
         Hi.
       </p>
       <p>
-        I'm an engineer from the forests of southern Finland.
+        I'm an engineer.
       </p>
       <p>
         I've done web and other computery things.
