@@ -5,6 +5,16 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 // Paths Aliases defined through tsconfig.json
 const typescriptWebpackPaths = require('./webpack.config.js')
 
+const googleAnalyticsScript = {
+  __html: `
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-115942896-1');
+  `
+}
+
 export default {
   entry: path.join(__dirname, 'src', 'index.tsx'),
   getSiteData: () => ({
@@ -51,7 +61,8 @@ export default {
           <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
           <meta name="theme-color" content="#2b404e" />
           <meta property="og:image" content="http://samulisuomi.fi/img/meta.jpg" />
-
+          <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-115942896-1" />
+          <script dangerouslySetInnerHTML={googleAnalyticsScript} />
         </Head>
         <Body>
           {children}
