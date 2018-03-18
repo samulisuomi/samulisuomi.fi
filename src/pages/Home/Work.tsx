@@ -10,7 +10,7 @@ const ROOT_CLASS = `pages-home-${PAGE_ID}`
 export default () => (
   <div className={ROOT_CLASS}>
     <h4 id={PAGE_ID}>
-      What I've been doing?
+      Work
     </h4>
     <p>
       Currently I work as a full-stack web developer at Synack,
