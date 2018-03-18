@@ -14,13 +14,16 @@ export default () => (
     </div>
     <div className="row">
       <p>
+        Hi.
+      </p>
+      <p>
+        I'm an engineer from the forests of southern Finland.
+      </p>
+      <p>
         I've done web and other computery things.
       </p>
       <p>
         The owls are not what they seem.
-      </p>
-      <p>
-        The cake is a lie.
       </p>
     </div>
     <SocialLinks className={SOCIAL_LINKS_CLASS} />
