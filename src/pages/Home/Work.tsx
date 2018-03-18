@@ -2,13 +2,14 @@ import React from 'react'
 
 import './Work.scss'
 
-import { linkedIn } from '../../utilities/socialMediaItems'
+import { linkedIn as linkedInUrl } from '../../utilities/externalUrls'
 
-const ROOT_CLASS = 'pages-home-work'
+const PAGE_ID = 'work'
+const ROOT_CLASS = `pages-home-${PAGE_ID}`
 
 export default () => (
   <div className={ROOT_CLASS}>
-    <h4>
+    <h4 id={PAGE_ID}>
       What I've been doing?
     </h4>
     <p>
@@ -16,13 +17,12 @@ export default () => (
       a Silicon Valley startup providing a crowdsourced security platform.
     </p>
     <p>
-      Before this adventure, I worked in a consulting company,
-      first in enterprise application integrations and then in full-stack web development.
+      Before this adventure, I worked at the Finnish consulting company Digia, first in enterprise application integrations and then in full-stack web development.
       I've also researched agile methods,
       done smaller software projects on the side and completed my M.Sc in Software Engineering back in 2015.
     </p>
     <p>
-      For a full CV, visit my <a href={linkedIn.url}>LinkedIn</a>.
+      For a full CV, visit my <a href={linkedInUrl}>LinkedIn</a>.
     </p>
   </div>
 )

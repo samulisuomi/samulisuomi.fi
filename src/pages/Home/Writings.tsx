@@ -2,7 +2,8 @@ import React from 'react'
 
 import './Writings.scss'
 
-const ROOT_CLASS = 'pages-home-writings'
+const PAGE_ID = 'writings'
+const ROOT_CLASS = `pages-home-${PAGE_ID}`
 
 export default () => (
   <div className={ROOT_CLASS}>

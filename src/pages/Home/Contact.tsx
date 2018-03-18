@@ -2,9 +2,10 @@ import React from 'react'
 
 import './Contact.scss'
 
-import { linkedIn } from '../../utilities/socialMediaItems'
+import { linkedIn as linkedInUrl } from '../../utilities/externalUrls'
 
-const ROOT_CLASS = 'pages-home-contact'
+const PAGE_ID = 'contact'
+const ROOT_CLASS = `pages-home-${PAGE_ID}`
 
 export default () => (
   <div className={ROOT_CLASS}>
@@ -12,7 +13,7 @@ export default () => (
       Contact
     </h4>
     <p>
-      Feel free to contact me on <a href={linkedIn.url}>LinkedIn</a> using InMail, I check it regularly.
+      <a href={linkedInUrl}>LinkedIn</a> messages preferred.
     </p>
   </div>
 )
