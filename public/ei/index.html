@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ei.</title>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+    background-color: #e8e8e8;
+	margin: 12px;
+}
+.center {
+	left: 0;
+	text-align: center;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+	width: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 1000%;
+	word-wrap:break-word
+}?
+@-webkit-keyframes color_change {
+		0% { color: blue; }
+		25% { color: orange; }
+		50% { color: yellow; }
+		75% { color: green; }
+		100% { color: red; }
+		}
+		@-moz-keyframes color_change {
+		0% { color: blue; }
+		25% { color: orange; }
+		50% { color: yellow; }
+		75% { color: green; }
+		100% { color: red; }
+		}
+		@-ms-keyframes color_change {
+		0% { color: blue; }
+		25% { color: orange; }
+		50% { color: yellow; }
+		75% { color: green; }
+		100% { color: red; }
+		}
+		@-o-keyframes color_change {
+		0% { color: blue; }
+		25% { color: orange; }
+		50% { color: yellow; }
+		75% { color: green; }
+		100% { color: red; }
+		}
+		@keyframes color_change {
+		0% { color: blue; }
+		25% { color: orange; }
+		50% { color: yellow; }
+		75% { color: green; }
+		100% { color: red; }
+		}
+
+		.fade {
+		   -webkit-animation: color_change 0.5s infinite alternate;
+		   -moz-animation: color_change 0.5s infinite alternate;  
+		   -ms-animation: color_change 0.5s infinite alternate;  
+		   -o-animation: color_change 0.5s infinite alternate;  
+		   animation: color_change 0.5s infinite alternate;   
+		}
+</style>
+</head>
+
+<body>
+<div class="fullscreenDiv">
+	<p id="ei" class="center fade">Ei.</p>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+var newText = getUrlParameter('eieiei');
+if ((typeof newText != 'undefined') && (newText.length>0)) {
+	$("#ei").text(decodeURIComponent(newText));
+}
+
+function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return sParameterName[1];
+        }
+    }
+}         
+});
+</script>
+</body>
+
+</html>
