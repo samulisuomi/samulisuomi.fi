@@ -13,7 +13,7 @@ export default () => (
       Contact
     </h4>
     <p>
-      <a href={linkedInUrl}>LinkedIn</a> messages preferred.
+      <a href={linkedInUrl} target="_blank">LinkedIn</a> messages preferred.
     </p>
   </div>
 )

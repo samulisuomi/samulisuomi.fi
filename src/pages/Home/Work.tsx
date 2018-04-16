@@ -17,7 +17,7 @@ export default () => (
       a Silicon Valley startup providing a crowdsourced security platform.
     </p>
     <p>
-      For a full CV, visit my <a href={linkedInUrl}>LinkedIn</a>.
+      For a full CV, visit my <a href={linkedInUrl} target="_blank">LinkedIn</a>.
     </p>
   </div>
 )
