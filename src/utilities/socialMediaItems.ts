@@ -29,5 +29,6 @@ export const twitter: SocialMediaItem = {
 export const socialMediaItems: SocialMediaItem[] = [
   linkedIn,
   gitHub,
+  googlePlay,
   twitter
 ]
