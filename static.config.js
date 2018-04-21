@@ -36,6 +36,7 @@ export default {
     return (
       <Html>
         <Head>
+          <title>{ siteData.title }</title>
           <meta charSet="utf-8" />
           <meta name="description" content="Samuli Suomi" />
           <meta name="author" content="Samuli Suomi" />
