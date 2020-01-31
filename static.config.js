@@ -61,7 +61,7 @@ export default {
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png" />
           <meta name="theme-color" content="#000000" />
-          <meta property="og:image" content="http://samulisuomi.fi/img/meta.jpg" />
+          <meta property="og:image" content="https://samulisuomi.fi/img/meta.jpg" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115942896-1" />
           <script dangerouslySetInnerHTML={googleAnalyticsScript} />
         </Head>
